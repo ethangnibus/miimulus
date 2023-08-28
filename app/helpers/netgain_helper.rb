@@ -1,0 +1,2 @@
+module NetgainHelper
+end
