@@ -52,6 +52,6 @@ export default class extends Controller {
     main.classList.remove("blur")
 
     // enable main content scrolling
-    document.body.classList.add("overflow-hidden")
+    document.body.classList.remove("overflow-hidden")
   }
 }
