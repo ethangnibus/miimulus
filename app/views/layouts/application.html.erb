@@ -53,8 +53,8 @@
     </div>
 
 
-    <div id="below_navbar" class="bg-slate-300 flex">
-      <nav class="bg-purple-400 w-1/6 hidden md:flex flex-col text-center p-4 justify-between sticky top-20 h-[calc(100vh-80px)]">
+    <div id="below_navbar" class="bg-slate-300 flex top-20">
+      <nav class="bg-purple-400 w-1/6 hidden md:flex flex-col text-center p-4 justify-between sticky h-[calc(100vh-80px)] z-1">
         <div class="space-y-6 overflow-hidden">
           <div>
             Collections
@@ -75,7 +75,7 @@
       </nav>
 
 
-      <main id="main_space" class="bg-red-500 w-5/6 flex-grow flex-col min-h-screen overflow-y-auto relative top-0 left-0">
+      <main id="main_space" class="bg-red-500 flex-grow h-[calc(100vh-80px)] overflow-y-auto relative top-0 left-0">
         <%# <canvas data-controller="threejs" id="findme" class="relative top-0 left-0 w-full h-full bg-red-100"></canvas> %>
         <%= yield %>
       </main>

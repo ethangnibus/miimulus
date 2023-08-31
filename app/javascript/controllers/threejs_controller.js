@@ -21,7 +21,11 @@ export default class extends Controller {
     console.log("width", main_space.offsetWidth)
     console.log("height", main_space.offsetHeight)
     renderer.setSize( main_space.offsetWidth, main_space.offsetHeight );
-    below_navbar.appendChild( renderer.domElement );
+    const canvasElement = renderer.domElement;
+    canvasElement.classList.add('relative', 'flex-grow', 'border', 'border-green');
+    main_space.remove();
+    below_navbar.appendChild( canvasElement );
+
 
     const geometry = new THREE.BoxGeometry( 1, 1, 1 );
     const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
