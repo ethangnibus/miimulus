@@ -22,7 +22,7 @@ export default class extends Controller {
     console.log("height", main_space.offsetHeight)
     renderer.setSize( main_space.offsetWidth, main_space.offsetHeight );
     const canvasElement = renderer.domElement;
-    canvasElement.classList.add('relative', 'flex-grow', 'border', 'border-green');
+    canvasElement.classList.add('relative', 'flex-grow');
     main_space.remove();
     below_navbar.appendChild( canvasElement );
 
