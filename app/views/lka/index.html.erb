@@ -2,5 +2,12 @@
 
 <div>
   <h1 class="font-bold text-4xl">Lka#index</h1>
+  <div class="flex items-center justify-center">
+    <%= image_tag "lka_image.jpeg", alt: "LKA Image", class: "object-cover w-full h-full" %>
+  </div>
   <p>Find me in app/views/lka/index.html.erb</p>
+
+   <% (1..100).each do |i| %>
+    <p><%= i%></p>
+  <% end %>
 </div>
