@@ -22,10 +22,10 @@ export default class extends Controller {
     console.log("height", main_space.offsetHeight)
     renderer.setSize( main_space.offsetWidth, main_space.offsetHeight );
     const canvasElement = renderer.domElement;
+    // canvasElement.id = 'your-id';
     canvasElement.classList.add('relative', 'flex-grow');
-    main_space.remove();
+    main_space.classList.add("hidden")
     below_navbar.appendChild( canvasElement );
-
 
     const geometry = new THREE.BoxGeometry( 1, 1, 1 );
     const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
@@ -35,12 +35,12 @@ export default class extends Controller {
     camera.position.z = 5;
 
     function animate() {
-      requestAnimationFrame( animate );
-
+      
       cube.rotation.x += 0.01;
       cube.rotation.y += 0.01;
 
       renderer.render( scene, camera );
+      requestAnimationFrame( animate );
     }
     animate();
   }
