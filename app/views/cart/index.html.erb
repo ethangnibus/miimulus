@@ -3,4 +3,8 @@
   <p>Find me in app/views/cart/index.html.erb</p>
   <br>
   <%= link_to "Proceed to Checkout", checkout_path, class: "px-4 py-2 rounded-md border border-black bg-slate-400 font-medium hover:border-white hover:text-white" %>
+
+  <% (1..100).each do |i| %>
+    <p><%= i%></p>
+  <% end %>
 </div>
